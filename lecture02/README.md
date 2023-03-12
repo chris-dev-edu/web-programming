@@ -42,7 +42,7 @@ div {
 - 4. tag의 className을 선택
 
 ```css
-#div_class {
+.div_class {
   width: 200px;
   height: 100px;
   background-color: yellow;
