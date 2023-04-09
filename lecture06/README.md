@@ -1,7 +1,7 @@
 <!-- prettier-ignore -->
 <!-- prettier-ignore-start-->
 
-# Lecture 01.
+# Lecture 06.
 
 ## 01. React 환경설정
 
