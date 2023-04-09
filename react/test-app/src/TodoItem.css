@@ -1,0 +1,16 @@
+#todo-container {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+#todo-number {
+  border: 1px solid blue;
+}
+
+#todo-checkbox {
+  accent-color: red;
+}
+
+#todo-item {
+  background-color: yellow;
+}
