@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TodoItem from "./TodoItem";
 import WeatherItem from "./WeatherItem";
+import { weathers } from "./data/weather";
 
 const todoItems = [
   { number: 1, todo: "국어 공부하기", isCompleted: true },
@@ -16,8 +17,14 @@ function App() {
 
   return (
     <div className="App">
-      <WeatherItem />
-      <WeatherItem />
+      {weathers.map(({ weather, date, highestTemp, lowestTemp }) => (
+        <WeatherItem
+          weather={weather}
+          date={date}
+          highestTemp={highestTemp}
+          lowestTemp={lowestTemp}
+        />
+      ))}
       {todoItems.map(({ number, todo, isCompleted }) => (
         <TodoItem
           key={number}

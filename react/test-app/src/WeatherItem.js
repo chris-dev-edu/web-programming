@@ -14,12 +14,14 @@ const Icons = {
 };
 
 function WeatherItem(props) {
+  const { weather, date, highestTemp, lowestTemp } = props;
+
   return (
     <div className="container box">
-      <div className="date">4/9</div>
-      <img className="icon" src={sun} />
-      <div className="temperature">15℃/20℃</div>
-      <div className="weather">맑음</div>
+      <div className="date">{date}</div>
+      <img className="icon" src={Icons[weather]} />
+      <div className="temperature">{`${lowestTemp}℃/${highestTemp}℃`}</div>
+      <div className="weather">{weather}</div>
     </div>
   );
 }
