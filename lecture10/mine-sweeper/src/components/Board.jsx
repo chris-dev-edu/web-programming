@@ -114,7 +114,7 @@ function Board(props) {
     }
 
     if (isComplete() === rows * cols - numOfMine) {
-      isPlaying(false);
+      setIsPlaying(false);
       alert(`COMPLETE: ${seconds}`);
     }
   };
