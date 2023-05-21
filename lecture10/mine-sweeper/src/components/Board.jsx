@@ -81,17 +81,16 @@ function Board(props) {
 
   useEffect(() => {
     if (isGameOver) {
+      setIsPlaying(false);
+      setSeconds(0);
       setTimeout(() => {
         alert("GAME OVER!!");
-        setIsPlaying(false);
-        setSeconds(0);
       }, 2000);
     }
   }, [isGameOver]);
 
   const openCell = (row, col, click) => {
-    if (grid[row][col]) return;
-    if (flag[row][col]) return;
+    if (!isPlaying || grid[row][col] || flag[row][col]) return;
 
     const newGrid = [...grid];
     newGrid[row][col] = true;
