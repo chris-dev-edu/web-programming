@@ -18,6 +18,25 @@
   background-color: #cccccc;
 }
 
+.opened:hover {
+  background-color: #cccccc;
+}
+
+.mine {
+  background-image: url("../mine.png");
+  background-size: cover;
+  background-color: #ff6666;
+}
+
+.flag {
+  background-image: url("../flag.png");
+  background-size: cover;
+}
+
+.mine:hover {
+  background-color: #ff6666;
+}
+
 .cell:active {
   animation: clickAnimation 0.2s;
 }

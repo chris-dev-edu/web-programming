@@ -23,7 +23,14 @@ function Game() {
           setSeconds={setSeconds}
         />
       </div>
-      {isPlaying && <Board />}
+      {isPlaying && (
+        <Board
+          isPlaying={isPlaying}
+          setIsPlaying={setIsPlaying}
+          seconds={seconds}
+          setSeconds={setSeconds}
+        />
+      )}
     </>
   );
 }
