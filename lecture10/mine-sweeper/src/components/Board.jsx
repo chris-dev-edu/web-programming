@@ -81,10 +81,10 @@ function Board(props) {
 
   useEffect(() => {
     if (isGameOver) {
-      setIsPlaying(false);
-      setSeconds(0);
       setTimeout(() => {
         alert("GAME OVER!!");
+        setIsPlaying(false);
+        setSeconds(0);
       }, 2000);
     }
   }, [isGameOver]);
